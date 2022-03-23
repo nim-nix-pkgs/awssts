@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1647920574,
+        "narHash": "sha256-D3ob5QykELhyNcTnISOkjEzLlgXltwON8Ucrz5cpiQI=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "bfb46a1f762002f07f9d81d93dacd544c6890623",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "sigv4": "sigv4",
+        "src-awsSTS-v1_0_2": "src-awsSTS-v1_0_2"
+      }
+    },
+    "sigv4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sigv4-1_2_1": "src-sigv4-1_2_1"
+      },
+      "locked": {
+        "dir": "1_2_1",
+        "lastModified": 1648001295,
+        "narHash": "sha256-mGlc/sAzNSo/Q2u8yXPsiKj3ncaR1OsqPQkhHsMcMbo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sigv4",
+        "rev": "ad70cc8d4e534cd9f962af8a9bcd438a11c6756b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "1_2_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sigv4",
+        "type": "github"
+      }
+    },
+    "src-awsSTS-v1_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1624709202,
+        "narHash": "sha256-eF2h8dgxapRRFWUnAmDPlWKc/iUeV/e4Vap2n8j0UZI=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_awsSTS",
+        "rev": "9577ef2dacb801a66ce347d5ec5f87e8cfe7423c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v1.0.2",
+        "repo": "nim_awsSTS",
+        "type": "github"
+      }
+    },
+    "src-sigv4-1_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1624034839,
+        "narHash": "sha256-CqlBp2Vd8ZMTOsk8bIOPuyDTg4+r8AGigcc+lQ8kyOg=",
+        "owner": "disruptek",
+        "repo": "sigv4",
+        "rev": "0aac8ac8db147b5f67d50ca35492dea456a15328",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/1.2.1",
+        "repo": "sigv4",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
